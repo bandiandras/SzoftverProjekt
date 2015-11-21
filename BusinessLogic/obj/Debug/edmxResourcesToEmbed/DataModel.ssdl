@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="project_databaseModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="games">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="max_players" Type="int" Nullable="false" />
+    <Property Name="game_count" Type="int" Nullable="false" />
+    <Property Name="max_playing_time" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="in_lobby">
+    <Key>
+      <PropertyRef Name="pk_id" />
+    </Key>
+    <Property Name="pk_id" Type="int" Nullable="false" />
+    <Property Name="userid" Type="int" Nullable="false" />
+    <Property Name="lobbyid" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lobby">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="game_id" Type="int" Nullable="false" />
+    <Property Name="nr_of_players" Type="int" Nullable="false" />
+    <Property Name="currently_in_lobby" Type="int" Nullable="false" />
+    <Property Name="start_date" Type="date" Nullable="false" />
+    <Property Name="creator_name" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="tel" Type="varchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="project_databaseModelStoreContainer">
+    <EntitySet Name="games" EntityType="Self.games" Schema="project_database" store:Type="Tables" />
+    <EntitySet Name="in_lobby" EntityType="Self.in_lobby" Schema="project_database" store:Type="Tables" />
+    <EntitySet Name="lobby" EntityType="Self.lobby" Schema="project_database" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="project_database" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

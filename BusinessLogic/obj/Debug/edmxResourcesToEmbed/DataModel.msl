@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="project_databaseModelStoreContainer" CdmEntityContainer="project_databaseEntities">
+    <EntitySetMapping Name="games">
+      <EntityTypeMapping TypeName="project_databaseModel.game">
+        <MappingFragment StoreEntitySet="games">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="max_players" ColumnName="max_players" />
+          <ScalarProperty Name="game_count" ColumnName="game_count" />
+          <ScalarProperty Name="max_playing_time" ColumnName="max_playing_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="in_lobby">
+      <EntityTypeMapping TypeName="project_databaseModel.in_lobby">
+        <MappingFragment StoreEntitySet="in_lobby">
+          <ScalarProperty Name="pk_id" ColumnName="pk_id" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="lobbyid" ColumnName="lobbyid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lobbies">
+      <EntityTypeMapping TypeName="project_databaseModel.lobby">
+        <MappingFragment StoreEntitySet="lobby">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="game_id" ColumnName="game_id" />
+          <ScalarProperty Name="nr_of_players" ColumnName="nr_of_players" />
+          <ScalarProperty Name="currently_in_lobby" ColumnName="currently_in_lobby" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="creator_name" ColumnName="creator_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="project_databaseModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

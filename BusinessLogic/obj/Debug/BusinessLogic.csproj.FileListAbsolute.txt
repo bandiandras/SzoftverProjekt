@@ -1,0 +1,13 @@
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\BusinessLogic.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\BusinessLogic.pdb
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\EntityFramework.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\MySql.Data.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\MySql.Web.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\EntityFramework.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\obj\Debug\BusinessLogic.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\obj\Debug\BusinessLogic.pdb
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache

@@ -1,0 +1,138 @@
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\ResourceManager.dll.config
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\ResourceManager.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\ResourceManager.pdb
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Antlr3.Runtime.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\BusinessLogic.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\EntityFramework.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\EntityFramework.SqlServer.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Google.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Web.Infrastructure.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\MySql.Data.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\MySql.Data.Entity.EF6.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\MySql.Web.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Newtonsoft.Json.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Owin.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Net.Http.Formatting.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Helpers.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Http.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Http.Owin.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Http.WebHost.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Mvc.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Optimization.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Razor.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.WebPages.Deployment.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.WebPages.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.WebPages.Razor.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\WebActivator.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\WebGrease.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\BusinessLogic.pdb
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Antlr3.Runtime.pdb
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\EntityFramework.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\EntityFramework.SqlServer.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Google.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\Newtonsoft.Json.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Net.Http.Formatting.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Helpers.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Http.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Http.Owin.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Http.WebHost.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Mvc.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Optimization.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.Razor.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.WebPages.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.WebPages.Deployment.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\bin\System.Web.WebPages.Razor.xml
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\obj\Debug\ResourceManager.csprojResolveAssemblyReference.cache
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\obj\Debug\ResourceManager.dll
+D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\Durandal451\obj\Debug\ResourceManager.pdb
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\ResourceManager.dll.config
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\ResourceManager.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\ResourceManager.pdb
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Antlr3.Runtime.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\BusinessLogic.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\EntityFramework.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\EntityFramework.SqlServer.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\MySql.Data.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\MySql.Data.Entity.EF6.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\MySql.Web.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Newtonsoft.Json.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Owin.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Net.Http.Formatting.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Helpers.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Http.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Http.Owin.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Http.WebHost.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Mvc.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Optimization.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Razor.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Razor.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\WebActivator.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\WebGrease.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\BusinessLogic.pdb
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Antlr3.Runtime.pdb
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\EntityFramework.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\EntityFramework.SqlServer.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Newtonsoft.Json.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Net.Http.Formatting.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Helpers.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Http.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Http.Owin.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Http.WebHost.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Mvc.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Optimization.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Razor.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.pdb

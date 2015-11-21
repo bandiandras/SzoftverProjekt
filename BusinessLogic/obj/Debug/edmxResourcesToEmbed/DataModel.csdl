@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="project_databaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="game">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="max_players" Type="Int32" Nullable="false" />
+    <Property Name="game_count" Type="Int32" Nullable="false" />
+    <Property Name="max_playing_time" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="in_lobby">
+    <Key>
+      <PropertyRef Name="pk_id" />
+    </Key>
+    <Property Name="pk_id" Type="Int32" Nullable="false" />
+    <Property Name="userid" Type="Int32" Nullable="false" />
+    <Property Name="lobbyid" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lobby">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="game_id" Type="Int32" Nullable="false" />
+    <Property Name="nr_of_players" Type="Int32" Nullable="false" />
+    <Property Name="currently_in_lobby" Type="Int32" Nullable="false" />
+    <Property Name="start_date" Type="DateTime" Nullable="false" />
+    <Property Name="creator_name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="tel" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="project_databaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="games" EntityType="Self.game" />
+    <EntitySet Name="in_lobby" EntityType="Self.in_lobby" />
+    <EntitySet Name="lobbies" EntityType="Self.lobby" />
+    <EntitySet Name="users" EntityType="Self.user" />
+  </EntityContainer>
+</Schema>
