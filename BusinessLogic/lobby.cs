@@ -21,6 +21,10 @@ namespace BusinessLogic
         public System.DateTime start_date { get; set; }
         public string creator_name { get; set; }
 
+        public lobby()
+        {
+
+        }
         public lobby(int ID, int game_id, int nr_of_players, DateTime start_date, string creator_name, int currently_in_lobby)
         {
             this.ID = ID;
@@ -30,11 +34,5 @@ namespace BusinessLogic
             this.creator_name = creator_name;
             this.currently_in_lobby = currently_in_lobby;
         }
-
-        public lobby()
-        {
-
-        }
     }
-
 }

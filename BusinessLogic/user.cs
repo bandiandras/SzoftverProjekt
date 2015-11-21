@@ -16,7 +16,10 @@ namespace BusinessLogic
     {
         public int ID { get; set; }
         public string name { get; set; }
-        public string password { get; set; }
         public string tel { get; set; }
+        public System.DateTime registration_date { get; set; }
+        public int created_lobbies { get; set; }
+        public int joined_lobbies { get; set; }
+        public int canceled_lobbies { get; set; }
     }
 }

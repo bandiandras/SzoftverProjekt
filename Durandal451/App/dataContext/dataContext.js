@@ -8,13 +8,13 @@
     };
     return vm;
 
-    function NewLobby(lobbyobject) {
+    function NewLobby() {
         $.ajax({
             method: "POST",
-            url: "http://bandi-pc:40577/api/Lobby/NewLobby/" + data ,
+            url: 'http://bandi-pc:40577/api/Lobby/NewLobby/',
             contentType: 'application/json; charset=utf-8',
             dataType: 'application/json',
-            data: JSON.stringify(lobbyobject)
+            data: JSON.stringify(window.location.pathname)
         })
     }
 
