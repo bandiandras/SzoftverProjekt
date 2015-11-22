@@ -9,9 +9,14 @@ using System.Web.Http;
 
 namespace ResourceManager.Controllers
 {
-    [RoutePrefix("api/lobby")]
     public class LobbyController : ApiController
     {
+        [HttpPost]
+        public void NewLobby([FromUri] LobbyDTO lobbyobject)
+        {
+            LobbyLogic.AddLobby(lobbyobject.GameId, lobbyobject.NrOfPlayers, lobbyobject.StartTime, lobbyobject.CreatorName);
+        }
+
         // GET api/<controller>
         [HttpGet]
         public List<LobbyDTO> GetAllLobbies()
@@ -27,10 +32,5 @@ namespace ResourceManager.Controllers
             }
         }
 
-        [HttpPost]
-        public void NewLobby([FromUri] LobbyDTO lobbyobject)
-        {
-            LobbyLogic.AddLobby(lobbyobject.GameId, lobbyobject.NrOfPlayers, lobbyobject.StartTime, lobbyobject.CreatorName);
-        }
     }
 }

@@ -22,7 +22,9 @@
                 { route: 'login', moduleId: 'viewmodels/login', nav: false},
                 { route: 'registerExternal', moduleId: 'viewmodels/registerExternal', nav: false},
                 { route: 'manage', moduleId: 'viewmodels/manage', nav: false, requiredRoles: ['RegisteredUsers'] },
-                { route: 'start', title: 'Get started', moduleId: 'viewmodels/start', nav: true, requiredRoles: ['RegisteredUsers']}
+                { route: 'start', title: 'Get started', moduleId: 'viewmodels/start', nav: true, requiredRoles: ['RegisteredUsers'] },
+                { route: 'newlobby', title:'New Lobby' , moduleId: 'viewmodels/newlobby', nav: true },
+                { route: 'lobby', title: 'Lobby', moduleId: 'viewmodels/lobby', nav: true }
         ]).buildNavigationModel();
 
         router.guardRoute = function (routeInfo, params, instance) {

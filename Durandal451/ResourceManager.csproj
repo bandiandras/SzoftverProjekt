@@ -235,6 +235,7 @@
     <Content Include="App\services\logger.js" />
     <Content Include="App\services\security.js" />
     <Content Include="App\viewmodels\flickr.js" />
+    <Content Include="App\viewmodels\lobby.js" />
     <Content Include="App\viewmodels\login.js" />
     <Content Include="App\viewmodels\manage.js" />
     <Content Include="App\viewmodels\register.js" />
@@ -244,6 +245,7 @@
     <Content Include="App\viewmodels\welcome.js" />
     <Content Include="App\views\detail.html" />
     <Content Include="App\views\flickr.html" />
+    <Content Include="App\views\lobby.html" />
     <Content Include="App\views\login.html" />
     <Content Include="App\views\manage.html" />
     <Content Include="App\views\register.html" />

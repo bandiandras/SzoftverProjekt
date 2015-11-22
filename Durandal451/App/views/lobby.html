@@ -1,0 +1,85 @@
+﻿<h2 class="page-title" data-bind="text: title"></h2>
+<div class="cotooltip">
+    <img src="Content/help.png" width="45px" height="45px" style="float: left; margin-left: 80px; margin-top: -50px" />
+    <span>
+        <p style="text-align: justify">
+            As an user, you can join a lobby by clicking on the "+" next to the lobbys details
+            or you can create a new lobby on the bottom of the table below, where you can select the ID of the game
+            you desire to play, the number of players you want to play the game with and the date / time you wish to play.
+        </p>
+    </span>
+</div>
+
+
+<div class="table" style="margin-top: 50px">
+    <br clear="all" />
+    <table class="table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Game ID</th>
+                <th>Players in the lobby</th>
+                <th>Game Starts At</th>
+                <th>Join</th>
+                <th>Leave</th>
+                <th>Cancel</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: Lobby">
+            <tr>
+                <td data-bind="text: Id"></td>
+                <td data-bind="text: GameId"></td>
+                <td><p style="display: inline" data-bind="text: CurrentlyInLobby"></p> / <p style="display: inline" data-bind="text: NrOfPlayers"></p></td>
+                <td style="padding-right: 7px" data-bind="text: StartTime"></td>
+                <td style="border-left: 2px solid white"><a href="#Play" data-bind="click: $parent.joinlobby" style="font-family: Arial; font-weight: 900; font-size: 25px; color: green; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Join this lobby">+</a></td>
+                <td><a href="#Play" data-bind="click: $parent.leavelobby" id="leave" style="font-family: Arial; font-weight: 900; font-size: 25px; color: white; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Leave this lobby">-</a></td>
+                <td><a href="#Play" data-bind="click: $parent.cancellobby" id="cancel" style="font-family: Arial; text-transform: none; font-weight: 900; font-size: 23px; color: red; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Only the creator of the lobby can do this operation">x</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><a href="#newlobby" class="navbar-link">Click here</a>, to create new lobby.</p>
+</div>
+
+<div class="jumbotron" style="width: 50%;float: left;margin-left: 25%; text-align: justify; padding-right: 15px; padding-left: 15px;">
+    <h1 style="text-align: center">Things to know about joining a lobby:</h1>
+    <p>The table on the left displays all the currently available lobbys, which were created by your co-workers.</p>
+    <p>If you're new to the website, there are a few things you need to know about joining a lobby:</p>
+    <ul>
+        <li>Once you pressed the "+" next to the details of the given lobby, you and others will see that you've joined.</li>
+        <li>
+            If the number of players in the lobby reaches the required ammount, those who are in the lobby receive a
+            notification that their game has started.
+        </li>
+        <li>If you can't stay or want to leave the lobby, you can do it by pressing the "-" at then end of the table.</li>
+    </ul>
+</div>
+
+<style>
+    div.cotooltip {
+        position: relative;
+    }
+
+        div.cotooltip span {
+            display: none;
+        }
+
+        div.cotooltip:hover span, div.cotooltip:focus span {
+            display: block;
+            text-align: center;
+            position: fixed;
+            float: left;
+            margin-left: 125px;
+            margin-top: -30px;
+            padding: 0.2em 0.6em;
+            border: 1px solid #5689CB;
+            border-radius: 2px;
+            width: 30%;
+            height: auto;
+            background-color: rgba(86,137,203,.7);
+            background-image: url("Content/info.png");
+            background-size: 100px 100px;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+</style>
