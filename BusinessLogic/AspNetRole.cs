@@ -12,22 +12,16 @@ namespace BusinessLogic
     using System;
     using System.Collections.Generic;
     
-    public partial class in_lobby
+    public partial class AspNetRole
     {
-        public int pk_id { get; set; }
-        public int userid { get; set; }
-        public int lobbyid { get; set; }
-
-        public in_lobby()
+        public AspNetRole()
         {
-
+            this.AspNetUsers = new HashSet<AspNetUser>();
         }
-
-        public in_lobby(int pk_id, int userid, int lobbyid)
-        {
-            this.userid = userid;
-            this.pk_id = pk_id;
-            this.lobbyid = lobbyid;
-        }
+    
+        public string Id { get; set; }
+        public string Name { get; set; }
+    
+        public virtual ICollection<AspNetUser> AspNetUsers { get; set; }
     }
 }

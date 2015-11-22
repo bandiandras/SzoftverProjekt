@@ -12,22 +12,11 @@ namespace BusinessLogic
     using System;
     using System.Collections.Generic;
     
-    public partial class in_lobby
+    public partial class C__MigrationHistory
     {
-        public int pk_id { get; set; }
-        public int userid { get; set; }
-        public int lobbyid { get; set; }
-
-        public in_lobby()
-        {
-
-        }
-
-        public in_lobby(int pk_id, int userid, int lobbyid)
-        {
-            this.userid = userid;
-            this.pk_id = pk_id;
-            this.lobbyid = lobbyid;
-        }
+        public string MigrationId { get; set; }
+        public string ContextKey { get; set; }
+        public byte[] Model { get; set; }
+        public string ProductVersion { get; set; }
     }
 }

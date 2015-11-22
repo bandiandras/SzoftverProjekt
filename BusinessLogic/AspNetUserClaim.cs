@@ -12,22 +12,13 @@ namespace BusinessLogic
     using System;
     using System.Collections.Generic;
     
-    public partial class in_lobby
+    public partial class AspNetUserClaim
     {
-        public int pk_id { get; set; }
-        public int userid { get; set; }
-        public int lobbyid { get; set; }
-
-        public in_lobby()
-        {
-
-        }
-
-        public in_lobby(int pk_id, int userid, int lobbyid)
-        {
-            this.userid = userid;
-            this.pk_id = pk_id;
-            this.lobbyid = lobbyid;
-        }
+        public int Id { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
+        public string User_Id { get; set; }
+    
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

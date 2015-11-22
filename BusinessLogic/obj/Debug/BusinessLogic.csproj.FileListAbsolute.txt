@@ -11,3 +11,23 @@ D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Du
 D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\obj\Debug\BusinessLogic.dll
 D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\obj\Debug\BusinessLogic.pdb
 D:\Adatok\Egyetem\III ev\III ev - I felev\Szoftveres Rendsz Tervezese\Project\Durandal451-master\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Bandi\Desktop\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.pdb
