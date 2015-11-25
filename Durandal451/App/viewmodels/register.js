@@ -107,14 +107,14 @@
             security.register({
                 userName: vm.userName(),
                 password: vm.password(),
-                confirmPassword: vm.confirmPassword()
+                confirmPassword: vm.confirmPassword()             
             }).done(function (data) {
                 security.login({
                     grant_type: "password",
                     username: vm.userName(),
                     password: vm.password()
                 }).done(function (data) {                    
-                    if (data.userName && data.access_token) {
+                    if (data.userName && data.access_token) {                        
                         session.setUser(data);
                         router.navigate('#/', 'replace');
                     } else {
@@ -126,6 +126,7 @@
                     }
                 }).always(function () {
                     session.isBusy(false);
+                    dataContext.AddUser(vm.userName())
                 }).failJSON(function (data) {                    
                     if (data && data.error_description) {
                         logger.log({

@@ -21,5 +21,20 @@ namespace BusinessLogic
         public int created_lobbies { get; set; }
         public int joined_lobbies { get; set; }
         public int canceled_lobbies { get; set; }
+
+        public user()
+        {
+
+        }
+        public user(int ID, string name, DateTime registration_date, int created_lobbies, int joined_lobbies, int canceled_lobbies)
+        {
+            this.ID = ID;
+            this.name = name;
+            this.registration_date = registration_date;
+            this.created_lobbies = created_lobbies;
+            this.joined_lobbies = joined_lobbies;
+            this.canceled_lobbies = canceled_lobbies;
+            this.tel = "0000000000";
+        }
     }
 }

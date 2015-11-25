@@ -1,50 +1,39 @@
 ﻿define(['knockout'], function (ko) {
     var vm = {
         NewLobby: NewLobby,
+        AddUser: AddUser,
         GetAllLobbies: GetAllLobbies,
-        JoinLobby: JoinLobby,
-        CancelLobby: CancelLobby,
-        LeaveLobby: LeaveLobby
+        CancelLobby: CancelLobby
     };
     return vm;
 
-    function NewLobby(lobbyobject) {
+    function NewLobby() {
         $.ajax({
-            method: "POST",
-            url: 'http://bandi-pc:40577/api/Lobby/NewLobby/' + lobbyobject,
+            method: "GET",
+            url: 'http://bandi-pc:40577/api/Lobby/NewLobby/',
             contentType: 'application/json; charset=utf-8',
             dataType: 'application/json',
-            data: JSON.stringify(lobbyobject)
+            async: true
         })
     }
 
-    function JoinLobby(joinobject) {
-        return $.ajax({
-            method: "POST",
-            url: 'http://bandi-pc:40577/api/Play/JoinLobby',
+    function AddUser(name) {
+        $.ajax({
+            method: "GET",
+            url: "http://bandi-pc:40577/api/User/AddUser/?name=" + name,
             contentType: 'application/json; charset=utf-8',
             dataType: 'application/json',
-            data: JSON.stringify(joinobject)
-        });
-    };
-
-    function LeaveLobby(joinobject) {
-        return $.ajax({
-            method: "POST",
-            url: 'http://bandi-pc:40577/api/Leave/LeaveLobby',
-            contentType: 'application/json; charset=utf-8',
-            dataType: 'application/json',
-            data: JSON.stringify(joinobject)
+            async: true
         });
     };
 
     function CancelLobby(id) {
         return $.ajax({
-            method: "POST",
-            url: 'http://bandi-pc:40577/api/Cancel/CancelLobby',
+            method: "GET",
+            url: 'http://bandi-pc:40577/api/Lobby/DeleteLobby/?id=' + id,
             contentType: 'application/json; charset=utf-8',
             dataType: 'application/json',
-            data: JSON.stringify(id)
+            async: true
         });
     };
 
@@ -57,15 +46,5 @@
             async: true
         });
     };
-
-    function GetLobbyById(id) {
-        return $.ajax({
-            method: "GET",
-            url: 'http://bandi-pc:40577/api/Play/GetLobbyById?id=' + id,
-            contentType: 'application/json; charset=utf-8',
-            dataType: 'json',
-            async: true
-        });
-    }
 });
 

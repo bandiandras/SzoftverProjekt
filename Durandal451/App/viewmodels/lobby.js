@@ -17,45 +17,6 @@
         })
     }
 
-    function joinlobby(targetlobby) {
-        if (targetlobby.CurrentlyInLobby() < targetlobby.NrOfPlayers()) {
-            var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
-            dataContext.JoinLobby(joinobject);
-            logger.log({
-                message: "You have been successfully joined the lobby. When the lobby fills, you will receive a notification.",
-                data: "",
-                showToast: true,
-                type: "info"
-            });
-            var groupname = targetlobby.CreatorName();
-            notifier.joinGroup(groupname);
-        }
-        else {
-            logger.log({
-                message: "You can't join this lobby, because it is already full!",
-                data: "",
-                showToast: true,
-                type: "warning"
-            });
-        }
-
-    }
-
-    function leavelobby(targetlobby) {
-        var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
-        dataContext.LeaveLobby(joinobject);
-        logger.log({
-            message: "You have been successfully left the lobby!",
-            data: "",
-            showToast: true,
-            type: "info"
-        });
-        var groupname = targetlobby.CreatorName();
-        notifier.leaveGroup(groupname);
-        router.navigate();
-        router.navigate('#/Play', 'replace');
-    }
-
     function cancellobby(targetlobby) {
         if (targetlobby.CreatorName() == session.userName()) {
             dataContext.CancelLobby(targetlobby.Id());
@@ -83,8 +44,6 @@
         title: title,
         DisplayData: DisplayData,
         Lobby: listOflobbies,
-        joinlobby: joinlobby,
-        leavelobby: leavelobby,
         cancellobby: cancellobby
     };
     return vm;

@@ -31,7 +31,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'durandal/com
     system.debug(true);
     //>>excludeEnd("build");
 
-    app.title = 'Durandal 451';
+    app.title = 'QPong';
 
     app.configurePlugins({
         router: true,

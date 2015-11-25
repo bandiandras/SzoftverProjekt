@@ -9,6 +9,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using ResourceManager.Providers;
 using ResourceManager.Models;
+using BusinessLogic;
 
 namespace ResourceManager
 {
@@ -36,7 +37,7 @@ namespace ResourceManager
 
         private static void InitializeDatabase()
         {
-            using (var ctxt = new IdentityDbContext())
+            using (var ctxt = new project_databaseEntities())
             {
                 System.Data.Entity.Database.SetInitializer<IdentityDbContext>(new IdentityDbInitializer());
                 ctxt.Database.Initialize(false);
@@ -75,7 +76,7 @@ namespace ResourceManager
             //    appId: "",
             //    appSecret: "");
 
-            app.UseGoogleAuthentication();
+            // app.UseGoogleAuthentication();
         }
     }
 }

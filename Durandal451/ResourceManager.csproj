@@ -213,6 +213,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DurandalController.cs" />
     <Compile Include="Controllers\LobbyController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DTOs\GameDTO.cs" />
     <Compile Include="DTOs\LobbyDTO.cs" />
     <Compile Include="Global.asax.cs">
@@ -222,7 +223,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="Results\Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -249,9 +250,7 @@
     <Content Include="App\views\login.html" />
     <Content Include="App\views\manage.html" />
     <Content Include="App\views\register.html" />
-    <Content Include="App\views\registerExternal.html" />
     <Content Include="App\views\shell.html" />
-    <Content Include="App\views\start.html" />
     <Content Include="App\views\welcome.html" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
@@ -363,6 +362,7 @@
   <ItemGroup>
     <Folder Include="App\utilities\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

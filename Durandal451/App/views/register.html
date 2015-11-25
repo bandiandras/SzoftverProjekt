@@ -1,5 +1,5 @@
-﻿<h2>Register</h2>
-<div class="row">
+﻿<h2 style="margin-right: 350px; margin-bottom: 0px; margin-left: -15px; background-color: rgba(240,202,145,.9);">Registration</h2>
+<div class="row" style="margin-right: 350px; background-color: rgba(240,202,145,.8); ">
     <section class="col-md-7">
         <form class="form-horizontal" role="form">
             <h4>Create a new account.</h4>
@@ -29,16 +29,5 @@
             </div>
             <p><a href="#" data-bind="click: login">Log in</a> if you already have a local account.</p>
         </form>
-    </section>
-    <section class="col-md-offset-2 col-md-3">
-        <h4>Use another service to login.</h4>
-        <hr />
-        <div>
-            <form class="form-horizontal" role="form" data-bind="visible: externalLoginProviders().length > 0">
-                <p data-bind="foreach: externalLoginProviders">
-                    <button type="submit" class="btn btn-default" data-bind="text: name, attr: { title: 'Log in using your ' + name() + ' account' }, click: login"></button>
-                </p>
-            </form>
-        </div>
     </section>
 </div>

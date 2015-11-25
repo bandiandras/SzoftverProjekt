@@ -20,7 +20,7 @@ namespace ResourceManager.DTOs
             this.StartTime = StartTime;
         }
 
-        public LobbyDTO(int GameId, int NrOfPlayers, DateTime StartTime, string CreatorName)
+        public LobbyDTO(int GameId, string CreatorName, DateTime StartTime,  int NrOfPlayers)
         {
             this.GameId = GameId;
             this.NrOfPlayers = NrOfPlayers;

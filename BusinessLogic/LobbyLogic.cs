@@ -33,7 +33,7 @@ namespace BusinessLogic
                 {
                     inlobbyid = 1;
                 }
-                user usr = db.users.SingleOrDefault(user => user.name == creator_name);
+                user usr = db.users.FirstOrDefault(user => user.name == creator_name);
                 in_lobby newinlobby = new in_lobby(usr.ID, id, inlobbyid);
                 ++usr.created_lobbies;
                 db.lobbies.Add(newlobby);

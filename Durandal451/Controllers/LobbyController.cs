@@ -11,11 +11,28 @@ namespace ResourceManager.Controllers
 {
     public class LobbyController : ApiController
     {
-        [HttpPost]
-        public void NewLobby([FromUri] LobbyDTO lobbyobject)
+        [Route("api/Lobby/NewLobby")]
+        [HttpGet]
+        public string NewLobby([FromUri] List<string> paramArray)
         {
-            LobbyLogic.AddLobby(lobbyobject.GameId, lobbyobject.NrOfPlayers, lobbyobject.StartTime, lobbyobject.CreatorName);
+          if (paramArray.Capacity > 0)
+            {
+                String[] l = paramArray[0].Split(',');
+                LobbyDTO lobbyobject = new LobbyDTO(Int32.Parse(l[0]), l[1], DateTime.Parse(l[2]), Int32.Parse(l[3]));
+                LobbyLogic.AddLobby(lobbyobject.GameId, lobbyobject.NrOfPlayers, lobbyobject.StartTime, lobbyobject.CreatorName);
+                return "recieved an object!";
+            }
+
+            return "NOTHING RECIEVED...";
         }
+
+        [Route("api/Lobby/DeleteLobby")]
+        [HttpGet]
+        public void DeleteLobby([FromUri] int id)
+        {
+            LobbyLogic.DeleteLobby(id);
+        }
+
 
         // GET api/<controller>
         [HttpGet]
