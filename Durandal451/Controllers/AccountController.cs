@@ -35,6 +35,7 @@ namespace ResourceManager.Controllers
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
             UserManager = userManager;
+            UserManager.PasswordHasher = new CustomPassword();
             AccessTokenFormat = accessTokenFormat;
         }
 

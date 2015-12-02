@@ -1,0 +1,62 @@
+﻿<h2 style="text-align: center">Creating lobby</h2>
+<div class="myjumbotron" style="width: 40%">
+    <section class="col-md-7">
+        <form class="form-horizontal" role="form">
+            <h4 style="margin-top:35px; margin-bottom: 0px; text-align: center">Please fill the required fields below</h4>
+            <div class="form-group">
+                <label for="NewLobbyNrOfPlayers" class="col-md-2 control-label">Number of players</label>
+                <div class="col-md-10">
+                    <input type="text" id="NewLobbyNrOfPlayers" class="form-control" data-bind="value: nrofplayers" placeholder="2-4" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="NewLobbyStartTime" class="col-md-2 control-label">Game starts at</label>
+                <div class="col-md-10">
+                    <input type="text" id="NewLobbyStartTime" class="form-control" data-bind="value: starttime" placeholder="YYYY-MM-DDTHH:MM:SS" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="button" data-bind="click: addlobby">Create</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
+
+
+<style>
+    .button:focus {
+        outline: none;
+    }
+
+    .button {
+        border: 0px;
+
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 4.5px 11px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Agency FB';
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+        .button:hover {
+
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .button:active {
+
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+</style>

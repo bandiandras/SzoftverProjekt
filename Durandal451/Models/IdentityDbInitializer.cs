@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNet.Identity;
+using BusinessLogic;
 
 namespace ResourceManager.Models
 {

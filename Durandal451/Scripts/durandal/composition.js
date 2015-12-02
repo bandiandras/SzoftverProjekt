@@ -635,7 +635,7 @@ define(['durandal/system', 'durandal/viewLocator', 'durandal/binder', 'durandal/
                     this.bindAndShow(null, settings);
                 } else {
                     settings.area = settings.area || 'partial';
-                    settings.preserveContext = true;
+                    //settings.preserveContext = true;
 
                     viewLocator.locateView(settings.view, settings.area, settings.viewElements).then(function (child) {
                         composition.bindAndShow(child, settings);
@@ -682,7 +682,7 @@ define(['durandal/system', 'durandal/viewLocator', 'durandal/binder', 'durandal/
                     settings.parts = data.parts;
                 }
 
-                settings.preserveContext = true;
+                //settings.preserveContext = true;
             }
 
             composition.compose(element, settings, bindingContext, true);

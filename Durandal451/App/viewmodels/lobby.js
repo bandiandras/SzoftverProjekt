@@ -52,7 +52,7 @@
     function activate() {
         vm.cacheViews = false;
         DisplayData();
-        return false;
+        return true;
     }
 
 });

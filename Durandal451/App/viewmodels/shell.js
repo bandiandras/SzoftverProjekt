@@ -21,7 +21,7 @@
                 { route: 'register', moduleId: 'viewmodels/register', nav: false},
                 { route: 'login', moduleId: 'viewmodels/login', nav: false},
                 { route: 'manage', moduleId: 'viewmodels/manage', nav: false, requiredRoles: ['RegisteredUsers'] },
-                { route: 'createlobby', moduleId: 'viewmodels/createlobby', requiredRoles: ['RegisteredUsers'] ,nav: true },
+                { route: 'newlobby', title: 'Create lobby', moduleId: 'viewmodels/newlobby', nav: true, requiredRoles: ['RegisteredUsers'] },
                 { route: 'lobby', title: 'Lobbies', moduleId: 'viewmodels/lobby', nav: true }
         ]).buildNavigationModel();
 
@@ -50,9 +50,8 @@
 
     function init() {
         var dfd = $.Deferred(), fragment = $.getFragment(), externalAccessToken, externalError, loginUrl;
-
+        var ko = require('knockout');
         verifyStateMatch(fragment);
-
         window.location.hash = "";
 
         if (sessionStorage["associatingExternalLogin"]) {
@@ -256,4 +255,4 @@
             });
         }
     };
-});
+    });

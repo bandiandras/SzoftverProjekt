@@ -17,7 +17,7 @@ namespace BusinessLogic
                 {
                     id = db.lobbies.Max(lobby => lobby.ID) + 1;
                 }
-                catch (System.InvalidOperationException)
+                catch (Exception)
                 {
                     id = 1;
                 }
@@ -45,6 +45,7 @@ namespace BusinessLogic
         }
 
         //Lobby--JOIN--------------------------------------------------------------------------
+
         // SZEMAFOR, HOGY NE LEHESSEN EGYSZERRE KETTEN BIRIZGALNI AZ ADATBAZIST
         public static void JoinLobby(string username, int lobbyid)
         {
@@ -122,6 +123,19 @@ namespace BusinessLogic
             }
         }
         //-------------------------------------------------------------------------------------       
+
+        //exceptiont lekezelni - mi tortenik, ha a keresett id nem letezik
+        //Lobby--GET----------------------------------------------------------------------------
+        public static List<lobby> GetLobbyById(int id)
+        {
+            List<lobby> Lobbies = new List<lobby>();
+            using (var db = new project_databaseEntities())
+            {
+                lobby lob = db.lobbies.SingleOrDefault(lobby => lobby.ID == id);
+                Lobbies.Add(new lobby(lob.ID, lob.game_id, lob.nr_of_players, lob.start_date, lob.creator_name, lob.currently_in_lobby));
+            }
+            return Lobbies;
+        }
 
     }
 }
