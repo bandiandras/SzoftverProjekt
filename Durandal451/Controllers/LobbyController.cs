@@ -24,7 +24,15 @@ namespace ResourceManager.Controllers
             {
                 String[] l = paramArray[0].Split(',');
                 LobbyDTO lobbyobject = new LobbyDTO(Int32.Parse(l[0]), l[1], DateTime.Parse(l[2]), Int32.Parse(l[3]));
-                LobbyLogic.AddLobby(lobbyobject.GameId, lobbyobject.NrOfPlayers, lobbyobject.StartTime, lobbyobject.CreatorName);
+                  try
+                  {
+                      LobbyLogic.AddLobby(lobbyobject.GameId, lobbyobject.NrOfPlayers, lobbyobject.StartTime, lobbyobject.CreatorName);
+                  }
+                  catch(Exception ex)
+                  {
+                      return "Az error occured!" + ex;
+                  }
+                
                 return "recieved an object!";
             }
 

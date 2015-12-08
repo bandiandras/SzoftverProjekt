@@ -11,9 +11,11 @@ using Owin;
 using ResourceManager.Providers;
 using ResourceManager.Models;
 using BusinessLogic;
+using ResourceManager.Resources;
 
 namespace ResourceManager
 {
+
     public partial class Startup
     {
         static Startup()
@@ -22,7 +24,8 @@ namespace ResourceManager
 
             InitializeDatabase();
 
-            UserManagerFactory = () => new UserManager<IdentityUser>(new UserStore<IdentityUser>());
+            //UserManagerFactory = () => new UserManager<IdentityUser>(new UserStore<IdentityUser>());
+            UserManagerFactory = () => new MyUserManager();
            
             RoleManagerFactory = () => new RoleManager<IdentityRole>(new RoleStore<IdentityRole>()); 
                       
@@ -48,7 +51,8 @@ namespace ResourceManager
 
         public static OAuthAuthorizationServerOptions OAuthOptions { get; private set; }
 
-        public static Func<UserManager<IdentityUser>> UserManagerFactory { get; set; }
+        //public static Func<UserManager<IdentityUser>> UserManagerFactory { get; set; }
+        public static Func<MyUserManager> UserManagerFactory { get; set; }
 
         public static Func<RoleManager<IdentityRole>> RoleManagerFactory { get; set; }
 

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using ResourceManager.Models;
 
 namespace ResourceManager.Controllers
 {
@@ -24,7 +23,7 @@ namespace ResourceManager.Controllers
 
         [Route("api/User/CheckUser/")]
         [HttpGet]
-        public string CheckUser([FromUri] List<string> userData)
+        public int CheckUser([FromUri] List<string> userData)
         {
             using (var db = new project_databaseEntities())
             {
@@ -39,10 +38,10 @@ namespace ResourceManager.Controllers
 
                     if (myUser.UserName == userName && myUser.PasswordHash == hashedPassword)
                     {
-                        return "1";
+                        return 1;
                     }
                 }
-                return "0";
+                return 0;
             }
         }
 

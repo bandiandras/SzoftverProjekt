@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using ResourceManager.Models;
 using ResourceManager.Providers;
 using ResourceManager.Results;
+using ResourceManager.Resources;
 
 namespace ResourceManager.Controllers
 {
@@ -31,15 +32,18 @@ namespace ResourceManager.Controllers
         {
         }
 
-        public AccountController(UserManager<IdentityUser> userManager,
+        public AccountController(MyUserManager userManager,
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
             UserManager = userManager;
-            UserManager.PasswordHasher = new CustomPassword();
+            //UserManager.PasswordHasher = new CustomPassword();
+            
+            //password validator
             AccessTokenFormat = accessTokenFormat;
         }
 
-        public UserManager<IdentityUser> UserManager { get; private set; }
+        //public UserManager<IdentityUser> UserManager { get; private set; }
+        public MyUserManager UserManager { get; private set; }
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
 
         // GET api/Account/UserInfo

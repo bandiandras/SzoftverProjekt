@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using Microsoft.AspNet.Identity;
 using BusinessLogic;
+using ResourceManager.Resources;
 
 namespace ResourceManager.Models
 {
@@ -23,7 +24,8 @@ namespace ResourceManager.Models
             roleManager.Create(userRole);
             
             var userStore = new UserStore<IdentityUser>(context);
-            var userManager = new UserManager<IdentityUser>(userStore);
+            var userManager = new MyUserManager();
+            //var userManager = new UserManager<IdentityUser>(userStore);
             
             var administrator = new IdentityUser { UserName = "Administrator" };
 

@@ -28,5 +28,6 @@ C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFr
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\BusinessLogic\obj\Debug\BusinessLogic.pdb

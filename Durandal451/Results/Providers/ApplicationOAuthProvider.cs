@@ -9,15 +9,20 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using System.Web;
+using BusinessLogic;
+using ResourceManager.Models;
+using ResourceManager.Resources;
 
 namespace ResourceManager.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
         private readonly string _publicClientId;
-        private readonly Func<UserManager<IdentityUser>> _userManagerFactory;
+        //private readonly Func<UserManager<IdentityUser>> _userManagerFactory;
+        private readonly Func<MyUserManager> _userManagerFactory;
 
-        public ApplicationOAuthProvider(string publicClientId, Func<UserManager<IdentityUser>> userManagerFactory)
+        //public ApplicationOAuthProvider(string publicClientId, Func<UserManager<IdentityUser>> userManagerFactory)
+        public ApplicationOAuthProvider(string publicClientId, Func<MyUserManager> userManagerFactory)
         {
             if (publicClientId == null)
             {
@@ -33,12 +38,35 @@ namespace ResourceManager.Providers
             _userManagerFactory = userManagerFactory;
         }
 
+        public IdentityUser FindUser(string UserName, string UserPassword)
+        {
+            using (var db = new project_databaseEntities())
+            {
+                CustomPassword pwd = new CustomPassword();
+                string pwdHash = pwd.HashPassword(UserPassword);
+                AspNetUser checkLoginData = db.AspNetUsers.SingleOrDefault(user => user.UserName == UserName && user.PasswordHash == pwdHash);
+                if (checkLoginData != null)
+                {
+                    IdentityUser usr = new IdentityUser(UserName);
+                    usr.PasswordHash = pwdHash;
+                    usr.SecurityStamp = checkLoginData.SecurityStamp;                   
+                    return usr;
+                }
+                return null;
+            }
+        }
+
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
-            using (UserManager<IdentityUser> userManager = _userManagerFactory())
+            using (MyUserManager userManager = new MyUserManager())
             {
-                IdentityUser user = await userManager.FindAsync(context.UserName, context.Password);
-
+                IdentityUser user = new IdentityUser();
+                if (FindUser(context.UserName, context.Password) != null)
+                {
+                    user = userManager.FindByName(context.UserName);
+                }
+                //IdentityUser user2 = await userManager.FindAsync(context.UserName, context.Password);
+               
                 if (user == null)
                 {
                     context.SetError("invalid_grant", "The user name or password is incorrect.");
