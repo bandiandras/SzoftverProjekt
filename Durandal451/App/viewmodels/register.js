@@ -1,5 +1,5 @@
-﻿define(['plugins/router', 'durandal/app', 'services/security', 'global/session', 'services/logger', 'jquery', 'knockout', 'knockout.validation'],
-    function (router, app, security, session,logger, $, ko) {
+﻿define(['plugins/router', 'durandal/app', 'services/security', 'global/session', 'services/logger', 'jquery', 'knockout', 'dataContext/dataContext', 'knockout.validation'],
+    function (router, app, security, session,logger, $, ko, dataContext) {
 
         // Internal properties and functions
         function ExternalLoginProviderViewModel(data) {
@@ -107,8 +107,9 @@
             security.register({
                 userName: vm.userName(),
                 password: vm.password(),
-                confirmPassword: vm.confirmPassword()             
+                confirmPassword: vm.confirmPassword()
             }).done(function (data) {
+                dataContext.AddUser(vm.userName()),
                 security.login({
                     grant_type: "password",
                     username: vm.userName(),
@@ -118,6 +119,7 @@
                         session.setUser(data);
                         router.navigate('#/', 'replace');
                     } else {
+
                         logger.log({
                             message: "An unknown error occurred.",                            
                             showToast: true,
@@ -126,8 +128,7 @@
                     }
                 }).always(function () {
                     session.isBusy(false);
-                    dataContext.AddUser(vm.userName())
-                }).failJSON(function (data) {                    
+                }).failJSON(function (data) {
                     if (data && data.error_description) {
                         logger.log({
                             message: "An error occurred: " + data.error_description,

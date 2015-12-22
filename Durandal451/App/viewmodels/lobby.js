@@ -1,8 +1,7 @@
-﻿define(['plugins/router', 'services/logger', 'dataContext/dataContext', 'model/lobbyModel', 'knockout', 'global/session'], function (router, logger, dataContext, LobbyModel, ko, session) {
+﻿define(['plugins/router', 'services/logger', 'dataContext/dataContext', 'model/lobbyModel', 'knockout', 'global/session', 'services/notifier'], function (router, logger, dataContext, LobbyModel, ko, session, notifier) {
     var title = 'Play';
     var listOflobbies = ko.observableArray([])
 
-    function NothingAtAll() { };
 
     function DisplayData() {
         this.cacheViews = false;
@@ -15,6 +14,68 @@
                 listOflobbies.push(g)
             }
         })
+    }
+
+    function joinlobby(targetlobby) {
+        if (targetlobby.CurrentlyInLobby() < targetlobby.NrOfPlayers()) {
+            var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
+            dataContext.JoinLobby(joinobject);
+            logger.log({
+                message: "You have been successfully joined the lobby. When the lobby fills, you will receive a notification.",
+                data: "",
+                showToast: true,
+                type: "info"
+            });
+            var groupname = targetlobby.CreatorName();
+            notifier.joinGroup(groupname);
+        }
+        else {
+            logger.log({
+                message: "You can't join this lobby, because it is already full!",
+                data: "",
+                showToast: true,
+                type: "warning"
+            });
+        }
+
+    }
+
+    function joinlobbyPOST(targetlobby) {
+        if (targetlobby.CurrentlyInLobby() < targetlobby.NrOfPlayers()) {
+            var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
+            dataContext.JoinLobbyPOST(joinobject);
+            logger.log({
+                message: "You have been successfully joined the lobby. When the lobby fills, you will receive a notification.",
+                data: "",
+                showToast: true,
+                type: "info"
+            });
+            var groupname = targetlobby.CreatorName();
+            notifier.joinGroup(groupname);
+        }
+        else {
+            logger.log({
+                message: "You can't join this lobby, because it is already full!",
+                data: "",
+                showToast: true,
+                type: "warning"
+            });
+        }
+    }
+
+    function leavelobby(targetlobby) {
+        var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
+        dataContext.LeaveLobby(joinobject);
+        logger.log({
+            message: "You have been successfully left the lobby!",
+            data: "",
+            showToast: true,
+            type: "info"
+        });
+        var groupname = targetlobby.CreatorName();
+        notifier.leaveGroup(groupname);
+        router.navigate();
+        router.navigate('#/Play', 'replace');
     }
 
     function cancellobby(targetlobby) {
@@ -44,7 +105,10 @@
         title: title,
         DisplayData: DisplayData,
         Lobby: listOflobbies,
-        cancellobby: cancellobby
+        cancellobby: cancellobby,
+        joinlobby: joinlobby,
+        joinlobbyPOST: joinlobbyPOST,
+        leavelobby: leavelobby
     };
     return vm;
 

@@ -9,7 +9,9 @@
         'bootstrap': '../Scripts/bootstrap',
         'jquery': '../Scripts/jquery-1.10.2',
         'jquery.utilities': '../Scripts/jquery.utilities',
-        'toastr': '../Scripts/toastr'
+        'toastr': '../Scripts/toastr',
+        'signalr': '../Scripts/jquery.signalR-2.2.0',
+        'signalr.hubs': '/signalr/hubs?'
     },
     shim: {
         'jquery.utilities': {
@@ -21,12 +23,18 @@
         },
         'knockout.validation': {
             deps: ['knockout']
+        },
+        'signalr': {
+            deps: ['jquery']
+        },
+        'signalr.hubs': {
+            deps: ['toastr', 'signalr']
         }
     }
 });
 
-define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'durandal/composition', 'global/session', 'knockout', 'knockout.validation'],
-    function (system, app, viewLocator,composition, session, ko) {
+define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'durandal/composition', 'global/session', 'knockout', 'knockout.validation', 'signalr.hubs', 'services/notifier', 'toastr'],
+    function (system, app, viewLocator, composition, session, ko, v, s, n, toastr) {
     //>>excludeStart("build", true);
     system.debug(true);
     //>>excludeEnd("build");
@@ -50,6 +58,9 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator', 'durandal/com
 
         //Show the app by setting the root view model for our application with a transition.
         app.setRoot('viewmodels/shell', 'entrance');
+        //signalR
+        n.boot();
+        //-------
     });
 
     function configureKnockout()

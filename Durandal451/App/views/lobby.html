@@ -30,9 +30,9 @@
                 <td data-bind="text: GameId"></td>
                 <td><p style="display: inline" data-bind="text: CurrentlyInLobby"></p> / <p style="display: inline" data-bind="text: NrOfPlayers"></p></td>
                 <td style="padding-right: 7px" data-bind="text: StartTime"></td>
-                <td style="border-left: 2px solid white"><a href="#Play" data-bind="click: $parent.joinlobby" style="font-family: Arial; font-weight: 900; font-size: 25px; color: green; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Join this lobby">+</a></td>
-                <td><a href="#Play" data-bind="click: $parent.leavelobby" id="leave" style="font-family: Arial; font-weight: 900; font-size: 25px; color: white; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Leave this lobby">-</a></td>
-                <td><a href="#Play" data-bind="click: $parent.cancellobby" id="cancel" style="font-family: Arial; text-transform: none; font-weight: 900; font-size: 23px; color: red; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Only the creator of the lobby can do this operation">x</a></td>
+                <td style="border-left: 2px solid white"><a href="#lobby" data-bind="click: $parent.joinlobbyPOST" style="font-family: Arial; font-weight: 900; font-size: 25px; color: green; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Join this lobby">+</a></td>
+                <td><a href="#lobby" data-bind="click: $parent.leavelobby" id="leave" style="font-family: Arial; font-weight: 900; font-size: 25px; color: white; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Leave this lobby">-</a></td>
+                <td><a href="#lobby" data-bind="click: $parent.cancellobby" id="cancel" style="font-family: Arial; text-transform: none; font-weight: 900; font-size: 23px; color: red; vertical-align: 5px; padding-left: 7px; padding-right: 7px" title="Only the creator of the lobby can do this operation">x</a></td>
             </tr>
         </tbody>
     </table>

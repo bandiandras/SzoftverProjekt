@@ -133,7 +133,6 @@ C:\Users\Bandi\Desktop\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Deplo
 C:\Users\Bandi\Desktop\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Razor.xml
 C:\Users\Bandi\Desktop\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.dll
 C:\Users\Bandi\Desktop\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.pdb
-C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.csprojResolveAssemblyReference.cache
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\ResourceManager.dll.config
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\ResourceManager.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\ResourceManager.pdb
@@ -144,6 +143,8 @@ C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\EntityFramework.
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.Cookies.dll
@@ -176,6 +177,8 @@ C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\EntityFramework.
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\Microsoft.Owin.Security.xml
@@ -197,5 +200,6 @@ C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.Razor
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\bin\System.Web.WebPages.Razor.xml
+C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.csprojResolveAssemblyReference.cache
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.dll
 C:\Users\Bandi\Documents\GitHub\SzoftverProjekt\Durandal451\obj\Debug\ResourceManager.pdb

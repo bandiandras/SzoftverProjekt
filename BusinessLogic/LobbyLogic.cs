@@ -29,12 +29,12 @@ namespace BusinessLogic
                 {
                     inlobbyid = db.in_lobby.Max(in_lobby => in_lobby.pk_id) + 1;
                 }
-                catch (System.InvalidOperationException)
+                catch (Exception)
                 {
                     inlobbyid = 1;
                 }
                 user usr = db.users.FirstOrDefault(user => user.name == creator_name);
-                in_lobby newinlobby = new in_lobby(usr.ID, id, inlobbyid);
+                in_lobby newinlobby = new in_lobby(inlobbyid, usr.ID, id);
                 ++usr.created_lobbies;
                 db.lobbies.Add(newlobby);
                 db.in_lobby.Add(newinlobby);
@@ -46,19 +46,19 @@ namespace BusinessLogic
 
         //Lobby--JOIN--------------------------------------------------------------------------
 
-        // SZEMAFOR, HOGY NE LEHESSEN EGYSZERRE KETTEN BIRIZGALNI AZ ADATBAZIST
         public static void JoinLobby(string username, int lobbyid)
         {
             using (var db = new project_databaseEntities())
             {
                 //csak akkor kell megengedjem, ha a jatekosszam kisebb, mint a games tablaban deinialt max
-                lobby gameid = db.lobbies.SingleOrDefault(lobby => lobby.ID == lobbyid);
-                game players = db.games.SingleOrDefault(game => game.ID == gameid.game_id);
+                lobby lobbyToJoin = db.lobbies.SingleOrDefault(lobby => lobby.ID == lobbyid);
+                game gameOfLobby = db.games.SingleOrDefault(game => game.ID == lobbyToJoin.game_id);
                 user usr = db.users.SingleOrDefault(user => user.name == username);
-                if (players.max_players > gameid.currently_in_lobby)
+                if (gameOfLobby.max_players > lobbyToJoin.currently_in_lobby)
                 {
                     int pk_id = db.in_lobby.Max(in_lobby => in_lobby.pk_id) + 1;
-                    in_lobby newinlobby = new in_lobby(usr.ID, lobbyid, pk_id);
+                    in_lobby newinlobby = new in_lobby(pk_id, usr.ID, lobbyid);
+                    //in_lobby newinlobby = new in_lobby(usr.ID, lobbyid, pk_id);
                     db.in_lobby.Add(newinlobby);
                     lobby lob = db.lobbies.SingleOrDefault(lobby => lobby.ID == lobbyid);
                     ++lob.currently_in_lobby;
@@ -104,6 +104,27 @@ namespace BusinessLogic
             }
         }
         //-------------------------------------------------------------------------------------
+        
+        /// <summary>
+        /// Checks if a user identified by username param is in lobby idetified by lobbyid
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="lobbyid"></param>
+        /// <returns></returns>
+        public static bool CheckIfInLobby(string username, int lobbyid)
+        {
+            using (var db = new project_databaseEntities())
+            {
+                lobby lob = db.lobbies.SingleOrDefault(lobby => lobby.ID == lobbyid);
+                user usr = db.users.SingleOrDefault(user => user.name == username);
+                in_lobby newinlobby = db.in_lobby.SingleOrDefault(in_lobby => ((in_lobby.lobbyid == lob.ID) && (in_lobby.userid == usr.ID)));
+                if(newinlobby != null)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         //Lobby--DELETE--------------------------------------------------------------------------
         public static void DeleteLobby(int id)
@@ -131,8 +152,16 @@ namespace BusinessLogic
             List<lobby> Lobbies = new List<lobby>();
             using (var db = new project_databaseEntities())
             {
-                lobby lob = db.lobbies.SingleOrDefault(lobby => lobby.ID == id);
-                Lobbies.Add(new lobby(lob.ID, lob.game_id, lob.nr_of_players, lob.start_date, lob.creator_name, lob.currently_in_lobby));
+                try
+                {
+                    lobby lob = db.lobbies.SingleOrDefault(lobby => lobby.ID == id);
+                    Lobbies.Add(new lobby(lob.ID, lob.game_id, lob.nr_of_players, lob.start_date, lob.creator_name, lob.currently_in_lobby));
+                }
+                catch
+                {
+                    
+                }
+
             }
             return Lobbies;
         }
