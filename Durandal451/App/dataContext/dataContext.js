@@ -61,25 +61,25 @@
     };
 
 
-    //function LeaveLobby(leaveobject) {
-    //    return $.ajax({
-    //        method: "GET",
-    //        url: 'http://bandi-pc:40577/api/Lobby/LeaveLobby/?paramArray=' + leaveobject,
-    //        contentType: 'application/json; charset=utf-8',
-    //        dataType: 'application/json',
-    //        async: true
-    //    });
-    //};
-
-    function LeaveLobby(joinobject) {
+    function LeaveLobby(leaveobject) {
         return $.ajax({
-            method: "POST",
-            url: 'http://bandi-pc:40577/api/Lobby/LeaveLobby',
+            method: "GET",
+            url: 'http://bandi-pc:40577/api/Lobby/LeaveLobby/?paramArray=' + leaveobject,
             contentType: 'application/json; charset=utf-8',
             dataType: 'application/json',
-            data: JSON.stringify(joinobject)
+            async: true
         });
     };
+
+    //function LeaveLobby(joinobject) {
+    //    return $.ajax({
+    //        method: "POST",
+    //        url: 'http://bandi-pc:40577/api/Lobby/LeaveLobby',
+    //        contentType: 'application/json; charset=utf-8',
+    //        dataType: 'application/json',
+    //        data: JSON.stringify(joinobject)
+    //    });
+    //};
 
     function GetAllLobbies() {
         return $.ajax({

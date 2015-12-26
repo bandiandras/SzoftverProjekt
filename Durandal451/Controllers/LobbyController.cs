@@ -85,11 +85,12 @@ namespace ResourceManager.Controllers
         [HttpGet]
         public void JoinLobby([FromUri] List<string> paramArray)
         {
-            if (! LobbyLogic.CheckIfInLobby(paramArray[0], Int32.Parse(paramArray[1])))
+            String[] lResult = paramArray[0].Split(',');
+            if (! LobbyLogic.CheckIfInLobby(lResult[0], Int32.Parse(lResult[1])))
             {
-                LobbyLogic.JoinLobby(paramArray[0], Int32.Parse(paramArray[1]));
+                LobbyLogic.JoinLobby(lResult[0], Int32.Parse(lResult[1]));
                 List<lobby> lob = new List<lobby>();
-                lob = LobbyLogic.GetLobbyById(Int32.Parse(paramArray[1]));
+                lob = LobbyLogic.GetLobbyById(Int32.Parse(lResult[1]));
                 if (lob[0].currently_in_lobby == lob[0].nr_of_players)
                 {
                     MsgHub.SendMessageToGroup("The lobby you joined is full, please be at the the tables at time!", lob[0].creator_name);
@@ -98,26 +99,15 @@ namespace ResourceManager.Controllers
             
         }
 
-        [HttpPost]
-        [Route("api/Lobby/JoinlobbyPOST")]
-        public void JoinLobbyPOST([FromBody] JoinDTO joinobject)
+        [Route("api/Lobby/LeaveLobby")]
+        [HttpGet]
+        public void LeaveLobby([FromUri] List<String> paramArray)
         {
-            LobbyLogic.JoinLobby(joinobject.UserName, joinobject.LobbyId);
+            String[] lResult = paramArray[0].Split(',');
+            LobbyLogic.LeaveLobby(lResult[0], Int32.Parse(lResult[1]));
             List<lobby> lob = new List<lobby>();
-            lob = LobbyLogic.GetLobbyById(joinobject.LobbyId);
-            if (lob[0].currently_in_lobby == lob[0].nr_of_players)
-            {
-                MsgHub.SendMessageToGroup("The lobby you joined is full, please be at the tables at time!", lob[0].creator_name);
-            }
-        }
-
-        [HttpPost]
-        public void LeaveLobby([FromBody] JoinDTO joinobject) 
-        {
-            LobbyLogic.LeaveLobby(joinobject.UserName, joinobject.LobbyId);
-            List<lobby> lob = new List<lobby>();
-            lob = LobbyLogic.GetLobbyById(joinobject.LobbyId);
-            MsgHub.SendMessageToGroup(joinobject.UserName + " left the lobby, please wait for another player!", lob[0].creator_name);
+            lob = LobbyLogic.GetLobbyById(Int32.Parse(lResult[1]));
+            MsgHub.SendMessageToGroup(lResult[0] + " left the lobby, please wait for another player!", lob[0].creator_name);
         }
 
         [Route("api/Lobby/GetLobbyById")]

@@ -18,7 +18,8 @@
 
     function joinlobby(targetlobby) {
         if (targetlobby.CurrentlyInLobby() < targetlobby.NrOfPlayers()) {
-            var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
+            var joinobject = ""
+            joinobject = joinobject.concat(session.userName(), ",", targetlobby.Id())
             dataContext.JoinLobby(joinobject);
             logger.log({
                 message: "You have been successfully joined the lobby. When the lobby fills, you will receive a notification.",
@@ -40,32 +41,10 @@
 
     }
 
-    function joinlobbyPOST(targetlobby) {
-        if (targetlobby.CurrentlyInLobby() < targetlobby.NrOfPlayers()) {
-            var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
-            dataContext.JoinLobbyPOST(joinobject);
-            logger.log({
-                message: "You have been successfully joined the lobby. When the lobby fills, you will receive a notification.",
-                data: "",
-                showToast: true,
-                type: "info"
-            });
-            var groupname = targetlobby.CreatorName();
-            notifier.joinGroup(groupname);
-        }
-        else {
-            logger.log({
-                message: "You can't join this lobby, because it is already full!",
-                data: "",
-                showToast: true,
-                type: "warning"
-            });
-        }
-    }
-
     function leavelobby(targetlobby) {
-        var joinobject = new LobbyModel.LobbyToJoin(session.userName(), targetlobby.Id());
-        dataContext.LeaveLobby(joinobject);
+        var leaveobject = ""
+        leaveobject = leaveobject.concat(session.userName(), ",", targetlobby.Id())
+        dataContext.LeaveLobby(leaveobject);
         logger.log({
             message: "You have been successfully left the lobby!",
             data: "",
@@ -107,7 +86,6 @@
         Lobby: listOflobbies,
         cancellobby: cancellobby,
         joinlobby: joinlobby,
-        joinlobbyPOST: joinlobbyPOST,
         leavelobby: leavelobby
     };
     return vm;
