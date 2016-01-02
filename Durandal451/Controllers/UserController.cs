@@ -70,7 +70,7 @@ namespace ResourceManager.Controllers
                 {
                     UserName = userName
                 };
-
+                
                 IdentityResult result = await UserManager.CreateAsync(user, userPass);
 
                 result = await UserManager.AddToRoleAsync(user.Id, DefaultUserRole);

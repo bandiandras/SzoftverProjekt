@@ -12,14 +12,6 @@ namespace ResourceManager.DTOs
 
         }
 
-        public LobbyDTO(int Id, int GameId, int NrOfPlayers, DateTime StartTime)
-        {
-            this.Id = Id;
-            this.GameId = GameId;
-            this.NrOfPlayers = NrOfPlayers;
-            this.StartTime = StartTime;
-        }
-
         public LobbyDTO(int GameId, string CreatorName, DateTime StartTime,  int NrOfPlayers)
         {
             this.GameId = GameId;

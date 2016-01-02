@@ -50,7 +50,6 @@ namespace BusinessLogic
         {
             using (var db = new project_databaseEntities())
             {
-                //csak akkor kell megengedjem, ha a jatekosszam kisebb, mint a games tablaban deinialt max
                 lobby lobbyToJoin = db.lobbies.SingleOrDefault(lobby => lobby.ID == lobbyid);
                 game gameOfLobby = db.games.SingleOrDefault(game => game.ID == lobbyToJoin.game_id);
                 user usr = db.users.SingleOrDefault(user => user.name == username);
@@ -58,7 +57,6 @@ namespace BusinessLogic
                 {
                     int pk_id = db.in_lobby.Max(in_lobby => in_lobby.pk_id) + 1;
                     in_lobby newinlobby = new in_lobby(pk_id, usr.ID, lobbyid);
-                    //in_lobby newinlobby = new in_lobby(usr.ID, lobbyid, pk_id);
                     db.in_lobby.Add(newinlobby);
                     lobby lob = db.lobbies.SingleOrDefault(lobby => lobby.ID == lobbyid);
                     ++lob.currently_in_lobby;
@@ -157,9 +155,9 @@ namespace BusinessLogic
                     lobby lob = db.lobbies.SingleOrDefault(lobby => lobby.ID == id);
                     Lobbies.Add(new lobby(lob.ID, lob.game_id, lob.nr_of_players, lob.start_date, lob.creator_name, lob.currently_in_lobby));
                 }
-                catch
+                catch(Exception ex)
                 {
-                    
+                    Console.WriteLine(ex);
                 }
 
             }
