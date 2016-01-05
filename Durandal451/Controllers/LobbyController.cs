@@ -13,7 +13,8 @@ namespace ResourceManager.Controllers
     public class LobbyController : ApiController
     {
         /// <summary>
-        /// Gets data from url, then makes a new lobby using.
+        /// Gets data from url, then makes a new lobby using the data
+        /// api/Lobby/NewLobby/paramAray=id,creatorName,starttime,nrofplayers
         /// </summary>
         /// <param name="paramArray"></param>
         /// <returns></returns>
@@ -47,9 +48,18 @@ namespace ResourceManager.Controllers
         /// <param name="id"></param>
         [Route("api/Lobby/DeleteLobby")]
         [HttpGet]
-        public void DeleteLobby([FromUri] int id)
+        public int DeleteLobby([FromUri] int id)
         {
-            LobbyLogic.DeleteLobby(id);
+            try
+            {
+                LobbyLogic.DeleteLobby(id);
+                return 1;
+            }
+            catch(Exception ex)
+            {
+                return 0;
+            }
+
         }
 
 
@@ -83,31 +93,47 @@ namespace ResourceManager.Controllers
         /// <param name="paramArray"></param>
         [Route("api/Lobby/Joinlobby")]
         [HttpGet]
-        public void JoinLobby([FromUri] List<string> paramArray)
+        public int JoinLobby([FromUri] List<string> paramArray)
         {
             String[] lResult = paramArray[0].Split(',');
-            if (! LobbyLogic.CheckIfInLobby(lResult[0], Int32.Parse(lResult[1])))
+            if (!LobbyLogic.CheckIfInLobby(lResult[0], Int32.Parse(lResult[1])))
             {
-                LobbyLogic.JoinLobby(lResult[0], Int32.Parse(lResult[1]));
-                List<lobby> lob = new List<lobby>();
-                lob = LobbyLogic.GetLobbyById(Int32.Parse(lResult[1]));
-                if (lob[0].currently_in_lobby == lob[0].nr_of_players)
+                try
                 {
-                    MsgHub.SendMessageToGroup("The lobby you joined is full, please be at the the tables at time!", lob[0].creator_name);
+                    LobbyLogic.JoinLobby(lResult[0], Int32.Parse(lResult[1]));
+                    List<lobby> lob = new List<lobby>();
+                    lob = LobbyLogic.GetLobbyById(Int32.Parse(lResult[1]));
+                    if (lob[0].currently_in_lobby == lob[0].nr_of_players)
+                    {
+                        MsgHub.SendMessageToGroup("The lobby you joined is full, please be at the the tables at time!", lob[0].creator_name);
+                    }
+                    return 1;
+                }
+                catch (Exception ex)
+                {
+                    return 0;
                 }
             }
-            
+            return 0;
         }
 
         [Route("api/Lobby/LeaveLobby")]
         [HttpGet]
-        public void LeaveLobby([FromUri] List<String> paramArray)
+        public int LeaveLobby([FromUri] List<String> paramArray)
         {
-            String[] lResult = paramArray[0].Split(',');
-            LobbyLogic.LeaveLobby(lResult[0], Int32.Parse(lResult[1]));
-            List<lobby> lob = new List<lobby>();
-            lob = LobbyLogic.GetLobbyById(Int32.Parse(lResult[1]));
-            MsgHub.SendMessageToGroup(lResult[0] + " left the lobby, please wait for another player!", lob[0].creator_name);
+            try
+            {
+                String[] lResult = paramArray[0].Split(',');
+                LobbyLogic.LeaveLobby(lResult[0], Int32.Parse(lResult[1]));
+                List<lobby> lob = new List<lobby>();
+                lob = LobbyLogic.GetLobbyById(Int32.Parse(lResult[1]));
+                MsgHub.SendMessageToGroup(lResult[0] + " left the lobby, please wait for another player!", lob[0].creator_name);
+                return 1;
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
         }
 
         [Route("api/Lobby/GetLobbyById")]

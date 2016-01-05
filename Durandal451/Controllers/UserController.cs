@@ -80,6 +80,30 @@ namespace ResourceManager.Controllers
             return 0;
         }
 
+        [Route("api/User/ChangePassword")]
+        [HttpGet]
+        // api/User/ChangePassword/?userData=username,oldpass,newpass
+        public async Task<int> ChangePassword([FromUri] List<string> userData)
+        {
+            if (userData.Capacity > 0)
+            {
+                String[] userDatas = userData[0].Split(',');
+                string userName = userDatas[0];
+                string userPass = userDatas[1];
+                string newUserPass = userDatas[2];
+
+                var usr = await UserManager.FindByNameAsync(userName);
+
+                IdentityResult result = await UserManager.ChangePasswordAsync(usr.Id, userPass, newUserPass);
+                if (result.Succeeded)
+                {
+                    return 1;
+                }
+                return 0;
+            }
+            return 0;
+        }
+
 
         [Route("api/User/CheckUser/")]
         [HttpGet]

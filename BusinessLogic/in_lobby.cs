@@ -20,7 +20,7 @@ namespace BusinessLogic
 
         public in_lobby()
         {
-
+             
         }
 
         public in_lobby(int pk_id, int userid, int lobbyid)

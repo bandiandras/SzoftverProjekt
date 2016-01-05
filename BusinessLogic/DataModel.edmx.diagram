@@ -4,16 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="128a7c0b4005497db072ecd692298892" Name="Diagram1">
-        <EntityTypeShape EntityType="Durandal451Model.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+      <Diagram DiagramId="128a7c0b4005497db072ecd692298892" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="Durandal451Model.C__MigrationHistory" Width="1.5" PointX="0.5" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="Durandal451Model.AspNetRole" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
         <EntityTypeShape EntityType="Durandal451Model.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="Durandal451Model.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Durandal451Model.AspNetUser" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="Durandal451Model.game" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Durandal451Model.in_lobby" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Durandal451Model.lobby" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Durandal451Model.user" Width="1.5" PointX="8.625" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Durandal451Model.game" Width="1.5" PointX="0.625" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Durandal451Model.in_lobby" Width="1.5" PointX="2.625" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Durandal451Model.lobby" Width="1.5" PointX="4.625" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Durandal451Model.user" Width="1.5" PointX="6.5" PointY="6.625" IsExpanded="true" />
         <AssociationConnector Association="Durandal451Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_User_Id" ManuallyRouted="false" />
         <AssociationConnector Association="Durandal451Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
         <AssociationConnector Association="Durandal451Model.AspNetUserRoles" ManuallyRouted="false" />

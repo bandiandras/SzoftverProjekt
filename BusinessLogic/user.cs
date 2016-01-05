@@ -25,7 +25,7 @@ namespace BusinessLogic
         public user()
         {
 
-        }
+        } 
         public user(int ID, string name, DateTime registration_date, int created_lobbies, int joined_lobbies, int canceled_lobbies)
         {
             this.ID = ID;
